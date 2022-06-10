@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Creador de cocinas</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=author content="Elena Rodríguez Río">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/conversor.js"></script>
+    <script src="./js/mueble.js"></script>
+    <script src="./js/croquis.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mueblerías Muu</h1>
+    </header>
+    <nav>   
+        <h2>Índice</h2>
+        <ul id = "indice">
+            <li><a href="./info.html" accesskey="i" title="enlace a la introdiccion">Introduccion y realización</a></li>
+            <li><a href="./proovedores.html" accesskey="p" title="enlace a los proovedores">Nuestros proovedores</a></li>
+            <li><a href="./transporte.html" accesskey="t" title="enlace a los transportes">Transporte</a></li>
+            <li><a href="./catalogo.html" accesskey="c" title="enlace al catálogo">Catálogo</a></li>
+            <li><a href="./localizaciones.html" accesskey="l" title="enlace a las localizaciones">Localizaciones</a></li>
+            <li><a href="./creador.html" accesskey="r" title="enlace al creador de cocinas">Creador de cocinas</a></li>
+            <li><a href="./existencia.php" accesskey="e" title="enlace al formulario de existencias">Existencias</a></li>
+            <li><a href="./descuento.php" accesskey="d" title="enlace al formulario de descuentos">Descuentos</a></li>
+        </ul>
+    </nav>
+    <main id = "main_creador">
+        <h2>Creador de cocinas</h2>
+        <div id="creador_area">
+            <fieldset id="cocina_top">
+                <legend>Parte de arriba</legend>
+                <div id="filas_top">
+                </div>
+                <button onclick="addFila('top')">Añadir</button>
+            </fieldset>
+            <fieldset id="cocina_bot">
+                <legend>Parte de abajo</legend>
+                <div id="filas_bot">
+                </div>
+                <button onclick="addFila('bot')">Añadir</button>
+            </fieldset>
+            <button id='btn_crear' onclick="crear()">Crear</button>
+        </div>
+        <div id="total_area"></div>
+        <div id="croquis_area">
+        </div>
+    </main>
+    <script src="./js/creador.js"></script>
+    <footer>
+        <p>Mueblerías Muu</p>
+        <p>985123456</p>
+        <p>contacto@muu.es</p>
+    </footer>
+</body>
+</html>

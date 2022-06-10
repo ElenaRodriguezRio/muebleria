@@ -1,0 +1,84 @@
+{
+    "localizaciones":[
+        {
+            "marcador":{
+                "nombre":"Muu Gijón",
+                "telefono": 985624317,
+                "lat":43.541241,
+                "lng":-5.661244,
+                "direccion":"Plaza del Instituto, 4, 33201 Gijón, Asturias",
+                "email":"contacto_gijon@muu.es"
+            }
+        },
+        {
+            "marcador":{
+                "nombre":"Muu Oviedo",
+                "telefono": 985647454,
+                "lat":43.363318,
+                "lng":-5.852398,
+                "direccion":"Calle Marqués de Pidal, 8, 33004 Oviedo, Asturias",
+                "email":"contacto_oviedo@muu.es"
+            }
+        },
+        {
+            "marcador":{
+                "nombre":"Muu Avilés",
+                "telefono": 985321476,
+                "lat":43.559239,
+                "lng":-5.924211,
+                "direccion":"Calle Marcos del Torniello, 2, 33401 Avilés, Asturias",
+                "email":"contacto_aviles@muu.es"
+            }
+        },
+        {
+            "marcador":{
+                "nombre":"Muu Pola de Siero",
+                "telefono": 985646853,
+                "lat":43.391333,
+                "lng":-5.663261,
+                "direccion":"Calle de la Ería del Hospital, 33510 Pola de Siero, Asturias",
+                "email":"contacto_siero@muu.es"
+            }
+        },
+        {
+            "marcador":{
+                "nombre":"Muu Madrid Salamanca",
+                "telefono": 946587321,
+                "lat":40.423486,
+                "lng":-3.685551,
+                "direccion":"Calle de Lagasca, 28, 28001 Madrid",
+                "email":"contacto_madridsalamanca@muu.es"
+            }
+        },
+        {
+            "marcador":{
+                "nombre":"Muu Barcelona",
+                "telefono": 965478123,
+                "lat":41.381804,
+                "lng":2.161195,
+                "direccion":"C. de Villarroel, 30, 08011 Barcelona",
+                "email":"contacto_barcelona@muu.es"
+            }
+        },
+        {
+            "marcador":{
+                "nombre":"Muu Valencia",
+                "telefono": 900235456,
+                "lat":39.473579,
+                "lng":-0.374399,
+                "direccion":"Calle de la Paz, 5, 46003 Valencia",
+                "email":"contacto_valencia@muu.es"
+            }
+        },
+        {
+            "marcador":{
+                "nombre":"Muu Madrid Tetuán",
+                "telefono": 946587322,
+                "lat":40.461855,
+                "lng":-3.697734,
+                "direccion":"Calle de Bravo Murillo, 290, 28020 Madrid",
+                "email":"contacto_madridtetuan@muu.es"
+            }
+        }
+    ]    
+}

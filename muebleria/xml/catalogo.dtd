@@ -1,0 +1,14 @@
+<!ELEMENT catalogo (estancia+)>
+<!ELEMENT estancia (categoria+)>
+<!ELEMENT categoria (producto+)>
+<!ELEMENT producto (#PCDATA)>
+<!ATTLIST producto 
+	nombre CDATA #REQUIRED
+	descripcion CDATA #REQUIRED
+	alto CDATA #IMPLIED
+	ancho CDATA #IMPLIED
+	fondo CDATA #IMPLIED
+	precio CDATA #REQUIRED
+	color CDATA #IMPLIED>
+<!ATTLIST estancia nombre CDATA #REQUIRED>
+<!ATTLIST categoria nombre CDATA #REQUIRED>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="catalogo.dtd" type="application/xml-dtd"?>
+<catalogo>
+    <estancia nombre="cocina">
+        <categoria nombre="armarios">
+            <producto nombre="conjunto Valencia" descripcion="Conjunto de encimera armarios y puertas cocina pequeña" precio="930" alto="210" ancho="170" fondo="85" color="blanco y azul"></producto>
+            <producto nombre="conjunto Barcelona" descripcion="Conjunto de encimera armarios y puertas cocina pequeña" precio="1200" alto="210" ancho="220" fondo="85" color="blanco y negro"></producto>
+            <producto nombre="conjunto Palma" descripcion="Conjunto de encimera armarios y puertas cocina mediana" precio="1960" alto="210" ancho="310" fondo="85" color="verde selva y azul marino"></producto>
+            <producto nombre="conjunto Sevilla" descripcion="Conjunto de encimera armarios y puertas cocina grande" precio="3000" alto="210" ancho="450" fondo="85" color="negro y rojo"></producto>        
+        </categoria>
+        <categoria nombre="mesas">
+            <producto nombre="mesa Dalia" descripcion="mesa cuadrada pequeña" precio="120" alto="90" ancho="90" fondo="90" color="negro"></producto>
+            <producto nombre="mesa Omar" descripcion="mesa redonda pequeña" precio="120" alto="90" ancho="90" fondo="90" color="blanco"></producto>
+            <producto nombre="mesa Amalia" descripcion="mesa rectangular grande" precio="120" alto="90" ancho="120" fondo="180" color="madera oscura"></producto>
+            <producto nombre="mesa Sara" descripcion="mesa redonda grande" precio="120" alto="90" ancho="140" fondo="140" color="madera clara"></producto>
+        </categoria>
+        <categoria nombre="sillas">
+            <producto nombre="silla Wendy" descripcion="Silla de metal tapizada" precio="70" alto="110" color="gris y blanco"></producto>
+            <producto nombre="silla Manolo" descripcion="Silla de madera tapizada" precio="80" alto="120" color="madera clara y azul"></producto>
+        </categoria>
+        <categoria nombre="decoración">
+            <producto nombre="conjunto sal y pienta" descripcion="conjunto de salero y pimentero de ceramica" precio="12" color="blanco"></producto>
+            <producto nombre="cesta de mimbre" descripcion="cesta de mimbre" precio="16" alto="20" ancho="25" fondo="30" color="marron"></producto>
+        </categoria>
+    </estancia>
+    <estancia nombre="baño">
+        <categoria nombre="muebles">
+            <producto nombre="mueble auxiliar Mindy" descripcion="Mueble auxiliar de baño con tres cajones" precio="130" alto="170" ancho="37" fondo="45" color="Madera oscura"></producto>
+        </categoria>
+        <categoria nombre="lavabos">
+            <producto nombre="conjunto Asia" descripcion="Lavabo con pila de mármol y grifería negra y dos cajones" precio="450" alto="50" ancho="80" fondo="30" color="Madera clara"></producto>
+            <producto nombre="conjunto Africa" descripcion="Lavabo con pila de mármol y grifería cobre y dos puertas" precio="470" alto="50" ancho="80" fondo="30" color="Madera oscura"></producto>
+            <producto nombre="conjunto America" descripcion="Lavabo con dos pilas de mármol y grifería dorada y tres cajones" precio="530" alto="65" ancho="150" fondo="30" color="Blanco"></producto>
+        </categoria>
+        <categoria nombre="espejos">
+            <producto nombre="espejo Caronte" descripcion="Espejo de pared redondo con marco de madera dorada" precio="180" alto="50" ancho="50" color="dorado"></producto>
+            <producto nombre="espejo Dunas" descripcion="Espejo de pared rectangular" precio="160" alto="40" ancho="100" color="negro"></producto>
+            <producto nombre="espejo Santana" descripcion="Espejo de pie rectangular" precio="230" alto="190" ancho="60" color="medera oscura"></producto>
+        </categoria>
+    </estancia>
+    <estancia nombre="salón">
+        <categoria nombre="lámparas">
+            <producto nombre="lámpara Trompa Naranja" descripcion="Lámpara de techo con pantalla de lampara de forma cilindrica y de tela naranja" precio="46" alto="60" ancho="30" fondo="30" color="Naranja"></producto>
+            <producto nombre="lámpara Pirámide" descripcion="Lampara de suelo con soporte de acero y con pantalla de lampara con forma de pirámide de base cuadrada hecha de tela con un estampado de pirámide" precio="65" alto="180" ancho="32" fondo="32" color=""></producto>
+            <producto nombre="lámpara Cloe" descripcion="Lámpara de sobremesa con cuerpo de cerámica negra y pantalla de lámpara cilindrica de tela negra" precio="25" alto="36" ancho="27" fondo="27" color="Amarillo"></producto>
+        </categoria>
+        <categoria nombre="sofás">
+            <producto nombre="sofá Roma" descripcion="sofá de tres plazas" precio="521" alto="150" ancho="200" fondo="70" color="rojo"></producto>
+            <producto nombre="sofá Europa" descripcion="Sofá de tres plazas con reposapies incorporado en la derecha" precio="725" alto="160" ancho="230" fondo="100" color="blanco"></producto>
+        </categoria>
+        <categoria nombre="estanterías">
+            <producto nombre="estantería Tura" descripcion="estantería grande de hierro forjado con 6 estantes de 40cm de altura" precio="950" alto="250" ancho="180" fondo="50" color="Negro"></producto>
+            <producto nombre="estantería Kuzco" descripcion="Estantería de madera pequeña con 2 estantes de 40cm" precio="500" alto="90" ancho="150" fondo="47" color="Madera oscura"></producto>
+            <producto nombre="estantería Irma" descripcion="Estantería grande de madera con 5 estantes de 40cm" precio="674" alto="210" ancho="165" fondo="50" color="Madera clara"></producto>
+        </categoria>
+        <categoria nombre="muebles mustimedia">
+            <producto nombre="Mueble TV Spark" descripcion="Mesa para TV de madera con un estante ancho y 3 cajones" precio="300" alto="110" ancho="165" fondo="65" color="rojo"></producto>
+            <producto nombre="Mueble TV Acero" descripcion="Mesa para TV de hierro forjado con un estante de 40cm de ancho, 2 cajones grandes y uno pequeño" precio="360" alto="120" ancho="140" fondo="50" color="azul"></producto>
+        </categoria>
+        <categoria nombre="mesas de té">
+            <producto nombre="Mesa de té Alicia" descripcion="Mesa de té rectangular de hierro forjado con superficie de cristal" precio="370" alto="95" ancho="120" fondo="100" color="Negro"></producto>
+            <producto nombre="Mesa de té Liebre" descripcion="Mesa de té redonda de madera" precio="250" alto="85" ancho="100" fondo="100" color="blanco"></producto>
+            <producto nombre="Mesa de té Conejo" descripcion="Mesa de té cuadrada de madera con la superficie de cristal" precio="360" alto="80" ancho="65" fondo="65" color="rosa"></producto>
+        </categoria>
+        <categoria nombre="decoración">
+            <producto nombre="Set de cojines" descripcion="Set de 4 cojines cuadrados forrados de tela con motivos florales" precio="20" alto="36" ancho="36" fondo="10" color="Rojo"></producto>
+            <producto nombre="Escultura de flamenco" descripcion="Escultura de cerámica blanca de un flamenco alzando el vuelo" precio="45" alto="30" ancho="40" fondo="20" color="blanco"></producto>
+            <producto nombre="Jarrón Azul" descripcion="Jarron de cerámica grande" precio="30" alto="50" ancho="25" fondo="25" color="Azul"></producto>
+        </categoria>
+    </estancia>
+    <estancia nombre="habitación">
+        <categoria nombre="camas">
+            <producto nombre="Cama Princesa" descripcion="cama individual con un canapé de madera con 2 cajones" precio="1025" alto="60" ancho="190" fondo="100" color="Madera clara"></producto>
+            <producto nombre="Cama Marta" descripcion="Cama matrimonial" precio="1600" alto="60" ancho="200" fondo="190" color="Blanca"></producto>
+            <producto nombre="Cama Bandera" descripcion="Cama individual" precio="820" alto="60" ancho="190" fondo="100" color="Negro"></producto>
+        </categoria>
+        <categoria nombre="armarios">
+            <producto nombre="Armario Toro" descripcion="Armario de madera grande con un compartimento para colgar ropa y 3 cajones grandes" precio="900" alto="200" ancho="160" fondo="55" color="Negro"></producto>
+            <producto nombre="Armario Vaca" descripcion="Armario grande de puerta corrediza coon 2 cajones en el interior" precio="956" alto="190" ancho="150" fondo="50" color="Azul"></producto>
+            <producto nombre="Armario Cabra" descripcion="Armario de puerta corrediza con espejo" precio="736" alto="190" ancho="140" fondo="55" color="Blanco"></producto>
+        </categoria>
+        <categoria nombre="cómodas">
+            <producto nombre="Cómoda Teca" descripcion="Cómoda de madera con 6 cajones" precio="252" alto="74" ancho="105" fondo="40" color="Madera negra"></producto>
+            <producto nombre="Cómoda Roble" descripcion="Cómoda pequeña de 3 cajones" precio="202" alto="74" ancho="60" fondo="40" color="Azul"></producto>
+            <producto nombre="Cómoda Metálica" descripcion="Cómoda de hierro con dos puertas simulando la forma de taquillas" precio="85" alto="90" ancho="70" fondo="45" color="Verde"></producto>
+        </categoria>
+        <categoria nombre="mesitas de noche">
+            <producto nombre="Mesita de noche Osito" descripcion="Mesita de noche de madera de 2 cajones colgada a la parez" precio="83" alto="50" ancho="50" fondo="45" color="Roja"></producto>
+            <producto nombre="Mesita de noche Luna" descripcion="Mesita de noche de madera co una estantería y un cajón" precio="125" alto="55" ancho="50" fondo="40" color="Negra"></producto>
+            <producto nombre="Mesita de noche Estrella" descripcion="Mesita de noche de madera con 2 cajones" precio="118" alto="55" ancho="55" fondo="45" color="Madera clara"></producto>
+        </categoria>
+    </estancia>
+</catalogo>

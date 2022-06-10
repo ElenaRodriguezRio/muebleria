@@ -1,0 +1,174 @@
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #131313;
+    background-color: #FCFCFC;
+    display: grid;
+    grid: "h h h"
+          "a b b"
+          "f f f";
+    grid-template-columns: auto 1fr 20%;
+}
+
+@media (max-width: 700px) {
+    body {
+        display: grid;
+        grid: "h h h"
+              "a a a"
+              "b b b"
+              "f f f";
+        grid-template-columns: auto 1fr 20%;
+    }
+    footer{
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+h1, footer {
+    font-family: 'Kelly Slab', cursive;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+h1{
+    padding: 1.5em 0.3em;
+    text-transform: uppercase;
+    text-align: center; 
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+footer{
+    padding: 1em;
+    margin-top: 0.6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: f;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+h2, h3 {
+    color: #168670;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+footer a{
+    color: #fff;
+    padding: 2em;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+a {
+    color: #420850;
+}
+/*a= 0 b= 1 c= 2 -> Especificidad = 12*/
+nav a:hover, nav a:focus{
+    color: #131313;
+}
+/*a= 0 b= 0 c= 2 -> Especificidad = 2*/
+nav a{
+    padding:0.3em;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+nav{
+    padding-right: 1.4em;
+    grid-area: a;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+th, td{
+    text-align: left;
+    padding: 0.25em 0.35em;
+    
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+th, h1, footer {
+    background-color: #8C1566;
+    color: #fff;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+tr{
+    border-bottom: 0.1em solid  #8C1566;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+table {
+    border-collapse: collapse;
+  }
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+figcaption{
+    color: #8C1566;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+video{
+    max-width: 100%;
+    height: auto;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+main{
+    grid-area: b;
+}
+/*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+header{
+    grid-area: h;
+}
+/*a= 1 b= 0 c= 0 -> Especificidad = 100*/
+#mapa {  
+    height: 35em; 
+}
+/*a= 0 b= 1 c= 1 -> Especificidad = 11*/
+img.leaflet-marker-icon { 
+    filter:hue-rotate(75deg) 
+}
+
+.fila{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#total_area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#canvas{
+    width:100%
+}
+
+#formulario_existencia{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario_existencia button{
+    width: fit-content;
+    margin: 0.5em 0em;
+}
+
+.fieldset_existencia{
+    width: fit-content;
+    min-width: 10em;
+}
+
+#formulario_descuentos{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario_descuentos input[type="submit"]{
+    width: fit-content;
+    margin: 0.5em 0em;
+}
+
+.fieldset_descuentos{
+    width: fit-content;
+    min-width: 10em;
+}
