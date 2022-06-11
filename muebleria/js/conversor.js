@@ -1,6 +1,6 @@
 class Conversor{
     constructor(){
-        this.url='http://api.currencylayer.com/currency_data/change?currencies=GBP,USD,SEK,NOK,EUR&format=1'
+        this.url='https://api.currencylayer.com/currency_data/change?currencies=GBP,USD,SEK,NOK,EUR&format=1'
         this.currencies=['GBP','USD','SEK','NOK','EUR']
         this.currecyName=['Libre esterterlina','Dolar estadounidense','Corona sueca','Corona noruega','Euro']
         Conversor.conversion=[1,1,1,1,1]
