@@ -30,7 +30,7 @@ function fila(pos){
                         "<input type='checkbox' name='"+pos+"_"+i+"' value='vacio' id='"+pos+"_vacio_"+i+"'>"+"<label for='"+pos+"_vacio_"+i+"'>Vacío</label>"+
                     "</div>"+
                     "<div class='elemento'>"+
-                        "<label for='"+pos+"_modelo_"+i+"'></label>Seleccione el modelo:"+
+                        "<label for='"+pos+"_modelo_"+i+"'>Seleccione el modelo:</label>"+
                         "<select class='modelo' name='"+pos+"_modelo_"+i+"' id='"+pos+"_modelo_"+i+"'>"+
                             "<optgroup label='Linea Classic'>"+
                                 "<option value='1'>Classic madera de haya</option>"+
@@ -44,7 +44,7 @@ function fila(pos){
                         "</select>"+
                     "</div>"+
                     "<div class='elemento'>"+
-                        "<label for='"+pos+"_color_"+i+"'></label>Seleccione el color:"+
+                        "<label for='"+pos+"_color_"+i+"'>Seleccione el color:</label>"+
                         "<select class='color' name='"+pos+"_color_"+i+"' id='"+pos+"_color_"+i+"'>"+
                             "<option value='1'>Natural</option>"+
                             "<option value='2'>Lacado Blanco</option>"+
