@@ -1,6 +1,6 @@
 class Conversor{
     constructor(){
-        this.url='https://api.currencylayer.com/currency_data/change?currencies=GBP,USD,SEK,NOK,EUR&format=1'
+        this.url='https://api.apilayer.com/currency_data/change?currencies=GBP,USD,SEK,NOK,EUR&format=1'
         this.currencies=['GBP','USD','SEK','NOK','EUR']
         this.currecyName=['Libre esterterlina','Dolar estadounidense','Corona sueca','Corona noruega','Euro']
         Conversor.conversion=[1,1,1,1,1]
@@ -40,16 +40,20 @@ class Conversor{
         $.ajax({
             type: "GET",
             url: this.url,
+            beforeSend: function(request) {
+                request.setRequestHeader("apikey", "Q6PVD9SB8WOqDwkEbnEJqv9Z2GgNmWLQ");
+              },
+            /*
             headers: {
-                'apikey':'Q6PVD9SB8WOqDwkEbnEJqv9Z2GgNmWLQ'
-            },
+                "apikey":"Q6PVD9SB8WOqDwkEbnEJqv9Z2GgNmWLQ"
+            },*/
             dataType: "json",
             success: function(datos) {
-                Conversor.conversion[0]=datos.quotes.USDGBP;
-                Conversor.conversion[1]=datos.quotes.USDUSD;
-                Conversor.conversion[2]=datos.quotes.USDSEK;
-                Conversor.conversion[3]=datos.quotes.USDNOK;
-                Conversor.conversion[4]=datos.quotes.USDEUR;
+                Conversor.conversion[0]=datos.quotes.USDGBP.start_rate;
+                Conversor.conversion[1]=datos.quotes.USDUSD.start_rate;
+                Conversor.conversion[2]=datos.quotes.USDSEK.start_rate;
+                Conversor.conversion[3]=datos.quotes.USDNOK.start_rate;
+                Conversor.conversion[4]=datos.quotes.USDEUR.start_rate;
                 
                 Conversor.call=true;
 
