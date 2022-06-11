@@ -94,8 +94,8 @@ $existencia = new Existencia;
         <h2>Buscador de existencias:</h2>
         <form id="formulario_existencia_provincia" action='#' method='get' name='existencia_provincia'>
             <h4>Ver la existencia en provincia:</h4>
-            <label for="fielset_producto">Producto:</label>
-            <select class="fielset_producto" name="fielset_producto" id='fielset_producto'>
+            <label for="fielset_producto1">Producto:</label>
+            <select class="fielset_producto" name="fielset_producto" id='fielset_producto1'>
                 <?php $existencia->{'getProductos'}()?>
             </select>
             <label for="fielset_provincia">Provincia:</label>
@@ -106,8 +106,8 @@ $existencia = new Existencia;
         </form>
         <form id="formulario_existencia_ciudad" action='#' method='get' name='existencia_ciudad'>
             <h4>Ver la existencia en ciudad:</h4>
-            <label for="fielset_producto">Producto:</label>
-            <select class="fielset_producto" name="fielset_producto" id='fielset_producto'>
+            <label for="fielset_producto2">Producto:</label>
+            <select class="fielset_producto" name="fielset_producto" id='fielset_producto2'>
                 <?php $existencia->{'getProductos'}()?>
             </select>
             <label for="fielset_ciudad">Ciudad:</label>
