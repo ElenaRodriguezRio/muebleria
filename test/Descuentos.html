@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Descuentos</title>
+    <link rel="stylesheet" href="./Descuentos_files/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Elena Rodríguez Río">
+<body>
+    <header>
+        <h1>Mueblerías Muu</h1>
+    </header>
+    <nav>   
+        <h2>Índice</h2>
+        <ul id="indice">
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/info.html" accesskey="i" title="enlace a la introdiccion">Introduccion y realización</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/proovedores.html" accesskey="p" title="enlace a los proovedores">Nuestros proovedores</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/transporte.html" accesskey="t" title="enlace a los transportes">Transporte</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/catalogo.html" accesskey="c" title="enlace al catálogo">Catálogo</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/localizaciones.html" accesskey="l" title="enlace a las localizaciones">Localizaciones</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/creador.html" accesskey="r" title="enlace al creador de cocinas">Creador de cocinas</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/existencia.php" accesskey="e" title="enlace al formulario de existencias">Existencias</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/descuento.php" accesskey="d" title="enlace al formulario de descuentos">Descuentos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Buscador de descuentos</h2>
+        <form id="formulario_descuentos_tienda" action="http://localhost/sew2022/muebleria/muebleria/descuento.php?fielset_tienda=Muu+Gij%C3%B3n&amp;submitTienda=Ver#" method="get" name="descuentos_tienda">
+            <h4>Ver los descuentos en las tiendas:</h4>
+            <label for="fielset_tienda">Tienda:</label>
+            <select class="fielset_tienda" name="fielset_tienda" id="fielset_tienda">
+                <option value="Muu Gijón">Muu Gijón</option><option value="Muu Oviedo">Muu Oviedo</option><option value="Muu Avilés">Muu Avilés</option><option value="Muu Pola de Siero">Muu Pola de Siero</option><option value="Muu Madrid Salamanca">Muu Madrid Salamanca</option><option value="Muu Barcelona">Muu Barcelona</option><option value="Muu Valencia">Muu Valencia</option><option value="Muu Madrid Tetuán">Muu Madrid Tetuán</option>            </select>
+            <input type="submit" name="submitTienda" value="Ver">
+        </form>
+        <form id="formulario_descuentos_ciudad" action="http://localhost/sew2022/muebleria/muebleria/descuento.php?fielset_tienda=Muu+Gij%C3%B3n&amp;submitTienda=Ver#" method="get" name="descuentos_ciudad">
+            <h4>Ver los descuentos en las ciudades:</h4>
+            <label for="fielset_ciudad">Ciudad:</label>
+            <select class="fielset_ciudad" name="fielset_ciudad" id="fielset_ciudad">
+                <option value="Gijón">Gijón</option><option value="Oviedo">Oviedo</option><option value="Avilés">Avilés</option><option value="Pola de Siero">Pola de Siero</option><option value="Madrid">Madrid</option><option value="Barcelona">Barcelona</option><option value="Valencia">Valencia</option>            </select>
+            <input type="submit" name="submitCiudad" value="Ver">
+        </form>
+<section id="resultado_descuentos"><h3>Productos con decuento:</h3><table><tbody><tr class="tabla"><th>Tienda</th><th>Producto</th><th>Precio original</th><th>Precio con descuento</th></tr><tr><td>Muu Gijón</td><td>espejo Dunas</td><td>160 €</td><td>112,00 €</td></tr><tr><td>Muu Gijón</td><td>lámpara Trompa Naranja</td><td>46 €</td><td>41,40 €</td></tr><tr><td>Muu Gijón</td><td>lámpara Cloe</td><td>25 €</td><td>18,75 €</td></tr><tr><td>Muu Gijón</td><td>Mueble TV Spark</td><td>300 €</td><td>270,00 €</td></tr><tr><td>Muu Gijón</td><td>Mesa de té Alicia</td><td>370 €</td><td>296,00 €</td></tr><tr><td>Muu Gijón</td><td>Escultura de flamenco</td><td>45 €</td><td>36,00 €</td></tr><tr><td>Muu Gijón</td><td>Cama Princesa</td><td>1025 €</td><td>717,50 €</td></tr><tr><td>Muu Gijón</td><td>Cómoda Roble</td><td>202 €</td><td>191,90 €</td></tr></tbody></table></section>
+    </main>
+    <footer>
+        <p>Mueblerías Muu</p>
+        <p>985123456</p>
+        <p>contacto@muu.es</p>
+    </footer>
+
+</body></html>

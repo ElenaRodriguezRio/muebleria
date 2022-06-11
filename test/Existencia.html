@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Existencia</title>
+    <link rel="stylesheet" href="./Existencia_files/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Elena Rodríguez Río">
+<body>
+    <header>
+        <h1>Mueblerías Muu</h1>
+    </header>
+    <nav>   
+        <h2>Índice</h2>
+        <ul id="indice">
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/info.html" accesskey="i" title="enlace a la introdiccion">Introduccion y realización</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/proovedores.html" accesskey="p" title="enlace a los proovedores">Nuestros proovedores</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/transporte.html" accesskey="t" title="enlace a los transportes">Transporte</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/catalogo.html" accesskey="c" title="enlace al catálogo">Catálogo</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/localizaciones.html" accesskey="l" title="enlace a las localizaciones">Localizaciones</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/creador.html" accesskey="r" title="enlace al creador de cocinas">Creador de cocinas</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/existencia.php" accesskey="e" title="enlace al formulario de existencias">Existencias</a></li>
+            <li><a href="http://localhost/sew2022/muebleria/muebleria/descuento.php" accesskey="d" title="enlace al formulario de descuentos">Descuentos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Buscador de existencias:</h2>
+        <form id="formulario_existencia_provincia" action="http://localhost/sew2022/muebleria/muebleria/existencia.php?fielset_producto=conjunto+Valencia&amp;fielset_ciudad=Gij%C3%B3n&amp;submitCiudad=Ver#" method="get" name="existencia_provincia">
+            <h4>Ver la existencia en provincia:</h4>
+            <label for="fielset_producto">Producto:</label>
+            <select class="fielset_producto" name="fielset_producto" id="fielset_producto">
+                <option value="conjunto Valencia">conjunto Valencia</option><option value="conjunto Barcelona">conjunto Barcelona</option><option value="conjunto Palma">conjunto Palma</option><option value="conjunto Sevilla">conjunto Sevilla</option><option value="mesa Dalia">mesa Dalia</option><option value="mesa Omar">mesa Omar</option><option value="mesa Amalia">mesa Amalia</option><option value="mesa Sara">mesa Sara</option><option value="silla Wendy">silla Wendy</option><option value="silla Manolo">silla Manolo</option><option value="conjunto sal y pienta">conjunto sal y pienta</option><option value="cesta de mimbre">cesta de mimbre</option><option value="mueble auxiliar Mindy">mueble auxiliar Mindy</option><option value="conjunto Asia">conjunto Asia</option><option value="conjunto Africa">conjunto Africa</option><option value="conjunto America">conjunto America</option><option value="espejo Caronte">espejo Caronte</option><option value="espejo Dunas">espejo Dunas</option><option value="espejo Santana">espejo Santana</option><option value="lámpara Trompa Naranja">lámpara Trompa Naranja</option><option value="lámpara Pirámide">lámpara Pirámide</option><option value="lámpara Cloe">lámpara Cloe</option><option value="sofá Roma">sofá Roma</option><option value="sofá Europa">sofá Europa</option><option value="estantería Tura">estantería Tura</option><option value="estantería Kuzco">estantería Kuzco</option><option value="estantería Irma">estantería Irma</option><option value="Mueble TV Spark">Mueble TV Spark</option><option value="Mueble TV Acero">Mueble TV Acero</option><option value="Mesa de té Alicia">Mesa de té Alicia</option><option value="Mesa de té Liebre">Mesa de té Liebre</option><option value="Mesa de té Conejo">Mesa de té Conejo</option><option value="Set de cojines">Set de cojines</option><option value="Escultura de flamenco">Escultura de flamenco</option><option value="Jarrón Azul">Jarrón Azul</option><option value="Cama Princesa">Cama Princesa</option><option value="Cama Marta">Cama Marta</option><option value="Cama Bandera">Cama Bandera</option><option value="Armario Toro">Armario Toro</option><option value="Armario Vaca">Armario Vaca</option><option value="Armario Cabra">Armario Cabra</option><option value="Cómoda Teca">Cómoda Teca</option><option value="Cómoda Roble">Cómoda Roble</option><option value="Cómoda Metálica">Cómoda Metálica</option><option value="Mesita de noche Osito">Mesita de noche Osito</option><option value="Mesita de noche Luna">Mesita de noche Luna</option><option value="Mesita de noche Estrella">Mesita de noche Estrella</option>            </select>
+            <label for="fielset_provincia">Provincia:</label>
+            <select class="fielset_provincia" name="fielset_provincia" id="fielset_provincia">
+                <option value="Asturias">Asturias</option><option value="Madrid">Madrid</option><option value="Barcelona">Barcelona</option><option value="Valencia">Valencia</option>            </select>
+            <input type="submit" name="submitProvincia" value="Ver">
+        </form>
+        <form id="formulario_existencia_ciudad" action="http://localhost/sew2022/muebleria/muebleria/existencia.php?fielset_producto=conjunto+Valencia&amp;fielset_ciudad=Gij%C3%B3n&amp;submitCiudad=Ver#" method="get" name="existencia_ciudad">
+            <h4>Ver la existencia en ciudad:</h4>
+            <label for="fielset_producto">Producto:</label>
+            <select class="fielset_producto" name="fielset_producto" id="fielset_producto">
+                <option value="conjunto Valencia">conjunto Valencia</option><option value="conjunto Barcelona">conjunto Barcelona</option><option value="conjunto Palma">conjunto Palma</option><option value="conjunto Sevilla">conjunto Sevilla</option><option value="mesa Dalia">mesa Dalia</option><option value="mesa Omar">mesa Omar</option><option value="mesa Amalia">mesa Amalia</option><option value="mesa Sara">mesa Sara</option><option value="silla Wendy">silla Wendy</option><option value="silla Manolo">silla Manolo</option><option value="conjunto sal y pienta">conjunto sal y pienta</option><option value="cesta de mimbre">cesta de mimbre</option><option value="mueble auxiliar Mindy">mueble auxiliar Mindy</option><option value="conjunto Asia">conjunto Asia</option><option value="conjunto Africa">conjunto Africa</option><option value="conjunto America">conjunto America</option><option value="espejo Caronte">espejo Caronte</option><option value="espejo Dunas">espejo Dunas</option><option value="espejo Santana">espejo Santana</option><option value="lámpara Trompa Naranja">lámpara Trompa Naranja</option><option value="lámpara Pirámide">lámpara Pirámide</option><option value="lámpara Cloe">lámpara Cloe</option><option value="sofá Roma">sofá Roma</option><option value="sofá Europa">sofá Europa</option><option value="estantería Tura">estantería Tura</option><option value="estantería Kuzco">estantería Kuzco</option><option value="estantería Irma">estantería Irma</option><option value="Mueble TV Spark">Mueble TV Spark</option><option value="Mueble TV Acero">Mueble TV Acero</option><option value="Mesa de té Alicia">Mesa de té Alicia</option><option value="Mesa de té Liebre">Mesa de té Liebre</option><option value="Mesa de té Conejo">Mesa de té Conejo</option><option value="Set de cojines">Set de cojines</option><option value="Escultura de flamenco">Escultura de flamenco</option><option value="Jarrón Azul">Jarrón Azul</option><option value="Cama Princesa">Cama Princesa</option><option value="Cama Marta">Cama Marta</option><option value="Cama Bandera">Cama Bandera</option><option value="Armario Toro">Armario Toro</option><option value="Armario Vaca">Armario Vaca</option><option value="Armario Cabra">Armario Cabra</option><option value="Cómoda Teca">Cómoda Teca</option><option value="Cómoda Roble">Cómoda Roble</option><option value="Cómoda Metálica">Cómoda Metálica</option><option value="Mesita de noche Osito">Mesita de noche Osito</option><option value="Mesita de noche Luna">Mesita de noche Luna</option><option value="Mesita de noche Estrella">Mesita de noche Estrella</option>            </select>
+            <label for="fielset_ciudad">Ciudad:</label>
+            <select class="fielset_ciudad" name="fielset_ciudad" id="fielset_ciudad">
+                <option value="Gijón">Gijón</option><option value="Oviedo">Oviedo</option><option value="Avilés">Avilés</option><option value="Pola de Siero">Pola de Siero</option><option value="Madrid">Madrid</option><option value="Barcelona">Barcelona</option><option value="Valencia">Valencia</option>            </select>
+            <input type="submit" name="submitCiudad" value="Ver">
+        </form>
+<section id="resultado_descuentos"><h3>Existencias:</h3><table><tbody><tr class="tabla"><th>Tienda</th><th>Producto</th><th>Unidades</th></tr><tr><td>Muu Gijón</td><td>conjunto Valencia</td><td>18</td></tr></tbody></table></section>
+    </main>
+    <footer>
+        <p>Mueblerías Muu</p>
+        <p>985123456</p>
+        <p>contacto@muu.es</p>
+    </footer>
+
+</body></html>
