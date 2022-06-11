@@ -1,55 +1,56 @@
 <?php
+class Descuento{
+    public function getTiendas(){
+        $pdo = new PDO('mysql:host=localhost;dbname=dbuser2021;charset=utf8', 'DBUSER2021', 'DBPSWD2021');
+        $sql = "SELECT nombre FROM tienda";
+        foreach ($pdo->query($sql) as $row) {
+        echo "<option value='" . $row['nombre'] . "'>" . $row['nombre'] . "</option>";
+        }
+    }
 
-function getTiendas(){
-    $pdo = new PDO('mysql:host=localhost;dbname=dbuser2021;charset=utf8', 'DBUSER2021', 'DBPSWD2021');
-    $sql = "SELECT nombre FROM tienda";
-    foreach ($pdo->query($sql) as $row) {
-       echo "<option value='" . $row['nombre'] . "'>" . $row['nombre'] . "</option>";
+    public function getCiudades(){
+        $pdo = new PDO('mysql:host=localhost;dbname=dbuser2021;charset=utf8', 'DBUSER2021', 'DBPSWD2021');
+        $sql = "SELECT DISTINCT ciudad FROM tienda";
+        foreach ($pdo->query($sql) as $row) {
+        echo "<option value='" . $row['ciudad'] . "'>" . $row['ciudad'] . "</option>";
+        }
+    }
+
+    public function resultadoTiendas(){
+        $pdo = new PDO('mysql:host=localhost;dbname=dbuser2021;charset=utf8', 'DBUSER2021', 'DBPSWD2021');
+        $sql = "SELECT t.nombre as tienda, p.nombre, p.precio, p.precio*(100-d.descuento)/100 as descuento
+        FROM producto p, tienda t, hay_descuento d 
+        WHERE p.id_producto = d.id_producto
+            and t.id_tienda = d.id_tienda
+            and t.nombre = '".$_GET["fielset_tienda"]."';";
+        foreach ($pdo->query($sql) as $row) {
+        echo "<tr>";
+        echo "<td>" . $row['tienda'] . "</td>";
+        echo "<td>" . $row['nombre'] . "</td>";
+        echo "<td>" . $row['precio'] . " €</td>";
+        echo "<td>" . number_format($row['descuento'], 2, ',', ' ') . " €</td>";
+        echo "</tr>";
+        }
+    }
+
+    public function resultadoCiudades(){
+        $pdo = new PDO('mysql:host=localhost;dbname=dbuser2021;charset=utf8', 'DBUSER2021', 'DBPSWD2021');
+        $sql = "SELECT t.nombre as tienda, p.nombre, p.precio, p.precio*(100-d.descuento)/100 as descuento
+        FROM producto p, tienda t, hay_descuento d 
+        WHERE p.id_producto = d.id_producto
+            and t.id_tienda = d.id_tienda
+            and t.ciudad = '".$_GET["fielset_ciudad"]."';";
+        foreach ($pdo->query($sql) as $row) {
+        echo "<tr>";
+        echo "<td>" . $row['tienda'] . "</td>";
+        echo "<td>" . $row['nombre'] . "</td>";
+        echo "<td>" . $row['precio'] . " €</td>";
+        echo "<td>" . number_format($row['descuento'], 2, ',', ' ') . " €</td>";
+        echo "</tr>";
+        }
     }
 }
-
-function getCiudades(){
-    $pdo = new PDO('mysql:host=localhost;dbname=dbuser2021;charset=utf8', 'DBUSER2021', 'DBPSWD2021');
-    $sql = "SELECT DISTINCT ciudad FROM tienda";
-    foreach ($pdo->query($sql) as $row) {
-       echo "<option value='" . $row['ciudad'] . "'>" . $row['ciudad'] . "</option>";
-    }
-}
-
-function resultadoTiendas(){
-    $pdo = new PDO('mysql:host=localhost;dbname=dbuser2021;charset=utf8', 'DBUSER2021', 'DBPSWD2021');
-    $sql = "SELECT t.nombre as tienda, p.nombre, p.precio, p.precio*(100-d.descuento)/100 as descuento
-    FROM producto p, tienda t, hay_descuento d 
-    WHERE p.id_producto = d.id_producto
-        and t.id_tienda = d.id_tienda
-        and t.nombre = '".$_GET["fielset_tienda"]."';";
-    foreach ($pdo->query($sql) as $row) {
-       echo "<tr>";
-       echo "<td>" . $row['tienda'] . "</td>";
-       echo "<td>" . $row['nombre'] . "</td>";
-       echo "<td>" . $row['precio'] . " €</td>";
-       echo "<td>" . number_format($row['descuento'], 2, ',', ' ') . " €</td>";
-       echo "</tr>";
-    }
-}
-
-function resultadoCiudades(){
-    $pdo = new PDO('mysql:host=localhost;dbname=dbuser2021;charset=utf8', 'DBUSER2021', 'DBPSWD2021');
-    $sql = "SELECT t.nombre as tienda, p.nombre, p.precio, p.precio*(100-d.descuento)/100 as descuento
-    FROM producto p, tienda t, hay_descuento d 
-    WHERE p.id_producto = d.id_producto
-        and t.id_tienda = d.id_tienda
-        and t.ciudad = '".$_GET["fielset_ciudad"]."';";
-    foreach ($pdo->query($sql) as $row) {
-       echo "<tr>";
-       echo "<td>" . $row['tienda'] . "</td>";
-       echo "<td>" . $row['nombre'] . "</td>";
-       echo "<td>" . $row['precio'] . " €</td>";
-       echo "<td>" . number_format($row['descuento'], 2, ',', ' ') . " €</td>";
-       echo "</tr>";
-    }
-}
-
+$descuento = new Descuento;
 ?>
 
 <!DOCTYPE HTML>
@@ -87,7 +88,7 @@ function resultadoCiudades(){
             <h4>Ver los descuentos en las tiendas:</h4>
             <label for="fielset_tienda">Tienda:</label>
             <select class="fielset_tienda" name="fielset_tienda" id='fielset_tienda'>
-                <?php getTiendas()?>
+                <?php $descuento->{'getTiendas'}()?>
             </select>
             <input type='submit' name='submitTienda' value='Ver'/>
         </form>
@@ -95,7 +96,7 @@ function resultadoCiudades(){
             <h4>Ver los descuentos en las ciudades:</h4>
             <label for="fielset_ciudad">Ciudad:</label>
             <select class="fielset_ciudad" name="fielset_ciudad" id='fielset_ciudad'>
-                <?php getCiudades()?>
+                <?php $descuento->{'getCiudades'}()?>
             </select>
             <input type='submit' name='submitCiudad' value='Ver'/>
         </form>
@@ -111,10 +112,10 @@ echo                    "<th>Precio original</th>";
 echo                    "<th>Precio con descuento</th>";
 echo                "</tr>";
 if(isset($_GET["fielset_ciudad"])){
-    resultadoCiudades();
+    $descuento->{'resultadoCiudades'}();
 }
 elseif (isset($_GET["fielset_tienda"])) {
-    resultadoTiendas();
+    $descuento->{'resultadoTiendas'}();
 }
 echo            "</table>";
 echo        "</section>";

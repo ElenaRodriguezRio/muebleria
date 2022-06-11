@@ -1,6 +1,6 @@
 class Conversor{
     constructor(){
-        this.url='http://api.currencylayer.com/live?access_key=fe9addbf362f1a6382d72f82db627c45&currencies=GBP,USD,SEK,NOK,EUR&format=1'
+        this.url='http://api.currencylayer.com/currency_data/change?currencies=GBP,USD,SEK,NOK,EUR&format=1'
         this.currencies=['GBP','USD','SEK','NOK','EUR']
         this.currecyName=['Libre esterterlina','Dolar estadounidense','Corona sueca','Corona noruega','Euro']
         Conversor.conversion=[1,1,1,1,1]
@@ -40,6 +40,9 @@ class Conversor{
         $.ajax({
             type: "GET",
             url: this.url,
+            headers: {
+                'apikey':'Q6PVD9SB8WOqDwkEbnEJqv9Z2GgNmWLQ'
+            },
             dataType: "json",
             success: function(datos) {
                 Conversor.conversion[0]=datos.quotes.USDGBP;
