@@ -125,49 +125,49 @@ header{
 img.leaflet-marker-icon { 
     filter:hue-rotate(75deg) 
 }
-
+/*a= 0 b= 1 c= 0 -> Especificidad = 10*/
 .fila{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+/*a= 1 b= 0 c= 0 -> Especificidad = 100*/
 #total_area{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
-
+/*a= 1 b= 0 c= 0 -> Especificidad = 100*/
 #canvas{
     width:100%
 }
-
+/*a= 1 b= 0 c= 0 -> Especificidad = 100*/
 #formulario_existencia{
     display: flex;
     flex-direction: column;
 }
-
+/*a= 1 b= 0 c= 1 -> Especificidad = 101*/
 #formulario_existencia button{
     width: fit-content;
     margin: 0.5em 0em;
 }
-
+/*a= 0 b= 1 c= 0 -> Especificidad = 10*/
 .fieldset_existencia{
     width: fit-content;
     min-width: 10em;
 }
-
+/*a= 1 b= 0 c= 0 -> Especificidad = 100*/
 #formulario_descuentos{
     display: flex;
     flex-direction: column;
 }
-
+/*a= 1 b= 1 c= 1 -> Especificidad = 111*/
 #formulario_descuentos input[type="submit"]{
     width: fit-content;
     margin: 0.5em 0em;
 }
-
+/*a= 0 b= 1 c= 0 -> Especificidad = 10*/
 .fieldset_descuentos{
     width: fit-content;
     min-width: 10em;
