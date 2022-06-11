@@ -24,14 +24,14 @@ function fila(pos){
         }
         var fila = "";
         fila+="<div class='fila fila_"+pos+"'>"+
-                    "<div class='tipo'>"+
-                        "<input type='radio' name='"+pos+"_"+i+"' value='"+tipo1+"' checked>"+txt1+
-                        "<input type='radio' name='"+pos+"_"+i+"' value='"+tipo2+"'>"+txt2+
-                        "<input type='checkbox' name='"+pos+"_"+i+"' value='vacio'>Vacío"+
+                    "<div class='tipo elemento'>"+
+                        "<input type='radio' name='"+pos+"_"+i+"' value='"+tipo1+"' id='"+pos+"_"+tipo1+"_"+i+"' checked>"+"<label for='"+pos+"_"+tipo1+"_"+i+"'>"+txt1+"</label>"+
+                        "<input type='radio' name='"+pos+"_"+i+"' value='"+tipo2+"' id='"+pos+"_"+tipo2+"_"+i+"'>"+"<label for='"+pos+"_"+tipo1+"_"+i+"'>"+txt2+"</label>"+
+                        "<input type='checkbox' name='"+pos+"_"+i+"' value='vacio' id='"+pos+"_vacio_"+i+"'>"+"<label for='"+pos+"_vacio_"+i+"'>Vacío</label>"+
                     "</div>"+
-                    "<p>"+
-                        "Seleccione el modelo:"+
-                        "<select class='modelo' name='"+pos+"_modelo_"+i+"'>"+
+                    "<div class='elemento'>"+
+                        "<label for='"+pos+"_modelo_"+i+"'></label>Seleccione el modelo:"+
+                        "<select class='modelo' name='"+pos+"_modelo_"+i+"' id='"+pos+"_modelo_"+i+"'>"+
                             "<optgroup label='Linea Classic'>"+
                                 "<option value='1'>Classic madera de haya</option>"+
                                 "<option value='2'>Classic madera de roble</option>"+
@@ -42,15 +42,15 @@ function fila(pos){
                                 "<option value='5'>Modern madera</option>"+
                             "</optgroup>"+
                         "</select>"+
-                    "</p>"+
-                    "<p>"+
-                        "Seleccione el color:"+
-                        "<select class='color' name='"+pos+"_color_"+i+"'>"+
+                    "</div>"+
+                    "<div class='elemento'>"+
+                        "<label for='"+pos+"_color_"+i+"'></label>Seleccione el color:"+
+                        "<select class='color' name='"+pos+"_color_"+i+"' id='"+pos+"_color_"+i+"'>"+
                             "<option value='1'>Natural</option>"+
                             "<option value='2'>Lacado Blanco</option>"+
                             "<option value='3'>Lacado Negro</option>"+
                         "</select>"+
-                    "</p>"+
+                    "</div>"+
                     "<button>Eliminar</button>"+
                 "</div>";
         return fila;
