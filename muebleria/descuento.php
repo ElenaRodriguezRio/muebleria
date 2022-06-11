@@ -58,7 +58,7 @@ $descuento = new Descuento;
 <html lang="es">
 <head>
     <meta charset="UTF-8"/>
-    <title>Proovedores</title>
+    <title>Descuentos</title>
     <link rel="stylesheet"  href="estilo.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name=author content="Elena Rodríguez Río">
