@@ -26,7 +26,7 @@ function fila(pos){
         fila+="<div class='fila fila_"+pos+"'>"+
                     "<div class='tipo elemento'>"+
                         "<input type='radio' name='"+pos+"_"+i+"' value='"+tipo1+"' id='"+pos+"_"+tipo1+"_"+i+"' checked>"+"<label for='"+pos+"_"+tipo1+"_"+i+"'>"+txt1+"</label>"+
-                        "<input type='radio' name='"+pos+"_"+i+"' value='"+tipo2+"' id='"+pos+"_"+tipo2+"_"+i+"'>"+"<label for='"+pos+"_"+tipo1+"_"+i+"'>"+txt2+"</label>"+
+                        "<input type='radio' name='"+pos+"_"+i+"' value='"+tipo2+"' id='"+pos+"_"+tipo2+"_"+i+"'>"+"<label for='"+pos+"_"+tipo2+"_"+i+"'>"+txt2+"</label>"+
                         "<input type='checkbox' name='"+pos+"_"+i+"' value='vacio' id='"+pos+"_vacio_"+i+"'>"+"<label for='"+pos+"_vacio_"+i+"'>Vacío</label>"+
                     "</div>"+
                     "<div class='elemento'>"+
