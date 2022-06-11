@@ -12,26 +12,6 @@ body {
     grid-template-columns: auto 1fr 20%;
 }
 
-@media (max-width: 700px) {
-    /*a= 0 b= 0 c= 1 -> Especificidad = 1*/
-    body {
-        display: grid;
-        grid: "h h h"
-              "a a a"
-              "b b b"
-              "f f f";
-        grid-template-columns: auto 1fr 20%;
-    }
-    /*a= 0 b= 0 c= 1 -> Especificidad = 1*/
-    footer{
-        flex-direction: column;
-        align-items:center;
-    }
-    /*a= 0 b= 1 c= 0 -> Especificidad = 10*/
-    .fila{    display: flex;
-        flex-direction: column;}
-}
-
 /*a= 0 b= 0 c= 1 -> Especificidad = 1*/
 h1, footer {
     font-family: 'Kelly Slab', cursive;
@@ -180,4 +160,32 @@ img.leaflet-marker-icon {
 .fieldset_descuentos{
     width: fit-content;
     min-width: 10em;
+}
+
+@media (max-width: 700px) {
+    /*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+    body {
+        display: grid;
+        grid: "h h h"
+              "a a a"
+              "b b b"
+              "f f f";
+        grid-template-columns: auto 1fr 20%;
+    }
+    /*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+    footer{
+        flex-direction: column;
+        align-items:center;
+    }
+    /*a= 0 b= 1 c= 0 -> Especificidad = 10*/
+    .fila{    display: flex;
+        flex-direction: column;}
+}
+
+@media (max-width: 500px) {
+    /*a= 0 b= 0 c= 1 -> Especificidad = 1*/
+    footer{
+        flex-direction: column;
+        align-items:center;
+    }
 }
