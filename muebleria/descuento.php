@@ -84,7 +84,7 @@ $descuento = new Descuento;
     <main>
         <h2>Buscador de descuentos</h2>
         <form id="formulario_descuentos_tienda" action='#' method='get' name='descuentos_tienda'>
-            <h4>Ver los descuentos en las tiendas:</h4>
+            <h3>Ver los descuentos en las tiendas:</h3>
             <label for="fielset_tienda">Tienda:</label>
             <select class="fielset_tienda" name="fielset_tienda" id='fielset_tienda'>
                 <?php $descuento->{'getTiendas'}()?>
@@ -92,7 +92,7 @@ $descuento = new Descuento;
             <input type='submit' name='submitTienda' value='Ver'/>
         </form>
         <form id="formulario_descuentos_ciudad" action='#' method='get' name='descuentos_ciudad'>
-            <h4>Ver los descuentos en las ciudades:</h4>
+            <h3>Ver los descuentos en las ciudades:</h3>
             <label for="fielset_ciudad">Ciudad:</label>
             <select class="fielset_ciudad" name="fielset_ciudad" id='fielset_ciudad'>
                 <?php $descuento->{'getCiudades'}()?>
@@ -102,7 +102,7 @@ $descuento = new Descuento;
 <?php
 if(isset($_GET["fielset_ciudad"]) || isset($_GET["fielset_tienda"])){
 echo        "<section id = 'resultado_descuentos'>";
-echo            "<h4>Productos con decuento:</h4>";
+echo            "<h3>Productos con decuento:</h3>";
 echo            "<table>";
 echo                "<tr class='tabla'>";
 echo                    "<th>Tienda</th>";

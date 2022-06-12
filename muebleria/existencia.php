@@ -93,7 +93,7 @@ $existencia = new Existencia;
     <main>
         <h2>Buscador de existencias:</h2>
         <form id="formulario_existencia_provincia" action='#' method='get' name='existencia_provincia'>
-            <h4>Ver la existencia en provincia:</h4>
+            <h3>Ver la existencia en provincia:</h3>
             <label for="fielset_producto1">Producto:</label>
             <select class="fielset_producto" name="fielset_producto" id='fielset_producto1'>
                 <?php $existencia->{'getProductos'}()?>
@@ -105,7 +105,7 @@ $existencia = new Existencia;
             <input type='submit' name='submitProvincia' value='Ver'/>
         </form>
         <form id="formulario_existencia_ciudad" action='#' method='get' name='existencia_ciudad'>
-            <h4>Ver la existencia en ciudad:</h4>
+            <h3>Ver la existencia en ciudad:</h3>
             <label for="fielset_producto2">Producto:</label>
             <select class="fielset_producto" name="fielset_producto" id='fielset_producto2'>
                 <?php $existencia->{'getProductos'}()?>
@@ -119,7 +119,7 @@ $existencia = new Existencia;
 <?php
 if(isset($_GET["fielset_ciudad"]) || isset($_GET["fielset_provincia"])){
 echo        "<section id = 'resultado_existencia'>";
-echo            "<h4>Existencias:</h4>";
+echo            "<h3>Existencias:</h3>";
 echo            "<table>";
 echo                "<tr class='tabla'>";
 echo                    "<th>Tienda</th>";
