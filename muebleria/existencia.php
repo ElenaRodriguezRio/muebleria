@@ -118,8 +118,8 @@ $existencia = new Existencia;
         </form>
 <?php
 if(isset($_GET["fielset_ciudad"]) || isset($_GET["fielset_provincia"])){
-echo        "<section id = 'resultado_descuentos'>";
-echo            "<h3>Existencias:</h3>";
+echo        "<section id = 'resultado_existencia'>";
+echo            "<h4>Existencias:</h4>";
 echo            "<table>";
 echo                "<tr class='tabla'>";
 echo                    "<th>Tienda</th>";

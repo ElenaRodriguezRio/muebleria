@@ -102,7 +102,7 @@ $descuento = new Descuento;
 <?php
 if(isset($_GET["fielset_ciudad"]) || isset($_GET["fielset_tienda"])){
 echo        "<section id = 'resultado_descuentos'>";
-echo            "<h3>Productos con decuento:</h3>";
+echo            "<h4>Productos con decuento:</h4>";
 echo            "<table>";
 echo                "<tr class='tabla'>";
 echo                    "<th>Tienda</th>";

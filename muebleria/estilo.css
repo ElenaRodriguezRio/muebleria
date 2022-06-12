@@ -161,6 +161,14 @@ img.leaflet-marker-icon {
     width: fit-content;
     min-width: 10em;
 }
+/*a= 1 b= 0 c= 0 -> Especificidad = 100*/
+#resultado_descuentos{
+    border-top: groove;
+}
+/*a= 1 b= 0 c= 0 -> Especificidad = 100*/
+#resultado_existencia{
+    border-top: groove;
+}
 
 @media (max-width: 700px) {
     /*a= 0 b= 0 c= 1 -> Especificidad = 1*/
